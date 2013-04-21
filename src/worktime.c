@@ -1,4 +1,6 @@
+//worktime, renamed version of
 //Dat nine to five progress bar watch face
+//Dominik Pich
 //Ryan Scott
 //Copyright 2013
 #include "pebble_os.h"
@@ -8,7 +10,7 @@
 
 #define MY_UUID { 0x1F, 0x04, 0x9A, 0x54, 0xE2, 0x19, 0x44, 0xEA, 0x82, 0x2A, 0x98, 0x1D, 0x98, 0xB8, 0xAF, 0xF4 }
 PBL_APP_INFO(MY_UUID,
-             "NineToFive", "Ryan Scott",
+             "worktime", "Dominik Pich",
              1, 0, /* App version */
              RESOURCE_ID_IMAGE_MENU_ICON,
              APP_INFO_WATCH_FACE);
@@ -21,8 +23,8 @@ TextLayer text_date_layer;
 Layer progress_bar_border_layer;
 Layer progress_bar_fill_layer;
 float percent_fill = 0.0;
-int start_time = 8;
-int end_time = 17;
+int start_time = 9;
+int end_time = 18;
 static char* percent_text;
 
 char *itoa(i)
